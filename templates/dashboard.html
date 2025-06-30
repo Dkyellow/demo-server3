@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>table of things</h1>
+    <ol>
+      {% for user in users %}
+      <li>{{user[1]}} {{user[2]}}</li>
+      {%endfor%}
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="{{ url_for('static', filename='/img/edad4295c8a3a50ae36d30e4a8fef8c3.jpg') }}"
+        class="pic"
+      />
+
+      <div class="wrapper">
+        <div class="login">
+          <h1>Login</h1>
+          <form action="" method="post">
+            <div class="txtbox">
+              <label for="name">Name</label>
+              <input type="text" name="username" />
+            </div>
+            <div class="txtbox">
+              <label for="name">Password</label>
+              <input type="password" name="password" />
+            </div>
+            <div class="forgot">
+              <a href="">Forgot Password</a>
+            </div>
+
+            <div>
+              <button class="btn" type="submit">Login</button>
+            </div>
+
+            <div class="reg-link">
+              <p>Don't have an Account</p>
+              <a class="reglink" href="{{ url_for('register') }}">Register ?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: black;
+  font-size: 14px;
+  background: url(/static/img/564c3a81247e32ba3916db3f3f8ea57b.jpg);
+  background-position: 0 -150px;
+  background-size: 100% 200vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.container {
+  margin-top: 50px;
+  width: 800px;
+  height: 500px;
+  background-color: rgba(216, 216, 216, 0.158);
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+}
+.container::before {
+  backdrop-filter: blur(100px);
+  z-index: -2;
+  top: -4px;
+  left: -4px;
+  position: absolute;
+  content: "";
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 25px;
+  background-image: linear-gradient(rgb(3, 91, 255), rgb(98, 1, 255));
+}
+.container::after {
+  z-index: -1;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.pic {
+  flex-basis: 50%;
+  width: 400px;
+  border-radius: 25px 0px 0px 25px;
+  opacity: 0.8;
+}
+.wrapper {
+  flex-basis: 50%;
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.login,
+.register {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  width: 400px;
+  transition: 1s;
+  flex-direction: column;
+}
+.login {
+  opacity: 1;
+}
+.register {
+  opacity: 1;
+}
+.wrapper h1 {
+  margin-bottom: 30px;
+}
+form {
+  justify-items: center;
+}
+.txtbox {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.txtbox input {
+  background-color: transparent;
+  border: none;
+
+  border-bottom: 2px solid rgb(47, 47, 48);
+  outline: none;
+}
+.forgot {
+  margin-top: 20px;
+  text-align: right;
+  width: 300px;
+}
+.btn {
+  width: 300px;
+  padding: 5px 0px 5px 0px;
+  margin-top: 20px;
+}
+
+.reg-link {
+  margin-top: 50px;
+  display: flex;
+  gap: 5px;
+}
+a {
+  color: blue;
+}
+.reglink,
+.loginlink {
+  color: blue;
+}
